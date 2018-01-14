@@ -29,7 +29,7 @@ public class DemoChatroomApplication implements WebSocketConfigurer{
 
 	@Bean
 	public KurentoClient kurentoClient() {
-	    return KurentoClient.create();
+	    return KurentoClient.create("ws://54.173.184.153:8888/kurento");
 	}
 
 	public static void main(String[] args) {
