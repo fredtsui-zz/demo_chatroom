@@ -218,6 +218,7 @@ input[type=button]:active, input[type=submit]:active {
 #room {
 	width: 100%;
 	text-align: center;
+	height: 100%;
 }
 
 #button-leave {
@@ -268,7 +269,7 @@ input[type=button]:active, input[type=submit]:active {
 }
 
 .participant video, .participant.main video {
-	width: 100%; ! important;
+	width: 30%; ! important;
 	height: auto;
 	!
 	important;
@@ -276,14 +277,16 @@ input[type=button]:active, input[type=submit]:active {
 
 .participant span {
 	color: PapayaWhip;
+	padding-left: 20px;
 }
 
 .participant.main {
-	width: 20%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .participant.main video {
+	width: 30%;
 	height: auto;
 }
 
@@ -445,4 +448,40 @@ a.hovertext:after {
 
 a.hovertext:hover:after, a.hovertext:focus:after {
 	opacity: 1.0;
+}
+
+div#whiteboard {
+	width: calc(80% - 20px);
+    height: 70%;
+    margin-left: 20px;
+    display: block;
+    text-align: center;
+    float: left;
+	background-color: white;
+	opacity: 0.4;
+}
+
+#whiteboard canvas{
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+}
+
+div#participants {
+	height: 100%;
+	width: 20%;
+	display: block;
+	float:left;
+	text-align: left;
+}
+
+div#chat {
+	width: 80%;
+	height: 30%;
+	display: block;
+	float:left;
+	text-align: left;
+}
+
+#chat input{
+	width: 70%;
 }
